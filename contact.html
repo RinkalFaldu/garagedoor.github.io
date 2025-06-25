@@ -1,208 +1,765 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link href="style.css" rel="stylesheet" text="text/css">
-<style>
-
-
-#home{
-display:block;
-background:rgba(243,244,235,0.9);
-background-position:center;
-height:950px;
- margin-bottom:0px;
-margin-right:165px;
-margin-left:165px;
-background-size:100%;
-padding-top:50px;
-margin-top:20px;
-border-radius: 25px 25px 0px 0px ;
-box-shadow: 5px 5px 5px 5px #888888;
-}
-
-form {
-   display:block;
-   background-image:linear-gradient(to right, #C8D9A0,  #A0D2D9, #CFD9B6, #D4CAD8, #D9BFAB,#8DD9C2 ,#DAD481);                                     
-   font-size:20px;
-   color:#1E48D9;
-    float:right;
-   padding:15px 30px 15px 20px;
-   margin-top:15px;
-   margin-bottom:12px;
-margin-right:30px;
-   margin-left:12px;
-   border:1px solid black;
-   border-radius:10px;
-  text-align:left;
- line-height:20px;
-}   
-
-input{ 
-text-align:left;
-width:100%;
-border:2px solid blue;
-padding:8px 8px 8px 8px;
-margin-top:1px;
-margin-bottom:6px;
-border-radius:5px;
-font-size:18px;
-}
-
-button{
-background-color:#23305C;
-color:white;
-font-size:20px;
-border:2px solid black;
-border-radius:5px;
-cursor:pointer;
-text-transform:uppercase;
-
-}
-
-button:hover{
-background-color:#96e0e9;
-color:black;
-width:60%;
-transition: .4s background-color;
-			}
-
-#message{
-border:2px solid blue;
-width:100%;
-border-radius:5px;
-font-size:18px;
-}
-
-#car{
-margin-left:20px;
-font-size:18px;
-
-}
-
-#footer{
-	background:#80F3FF;
-	min-height:40px;
-	border-radius: 0px 0px 20px 20px;
- 	box-shadow: 5px 5px 5px 5px #888888;
-       margin-bottom:0px;
-       margin-right:165px;
-       margin-left:165px;
-        background-size:100%;
-       padding-top:50px;
-      text-align:center;
- }
-
-
-#about{
-display:block;
-margin-left:50px;
-margin-right:700px;
-color:black;
- background:#6db1e4;
-background-size:100%;
-font-size:40px;
-font-family:arial;
-
-}
-
-#about:hover{
-           background-image:linear-gradient( #C8D9A0,  #A0D2D9, #CFD9B6, #D4CAD8, #D9BFAB,#8DD9C2 ,#DAD481);
-            color:#000000;
-           transition: .5s background-color;
-           text-align:center;
-          cursor:pointer;
-border:1px solid black;
-border-radius: 0px 0px 0px 0px ;
-          
-}
-
-</style>
-<title>
- Garage Door Repair & Instalation Service
-</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ABC Garage Door Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<div class="navbar">
-<ul>
-<li><a href="index.html">Home</a> </li>
-<li><a href="about.html">About</a> </li>
-<li><a href="design.html">Design</a> </li>
-<li><a href="Gallary.html">Gallery</a> </li>
-<li><a href="service.html">Service</a> </li>
-<li><a href="cost.html">Cost</a> </li>
-<li><a href="contact.html"id="onlink">Contact</a> </li>
- </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>ABC Garage Door</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="design.html" class="nav-link">Design</a>
+                <a href="Gallary.html" class="nav-link">Gallery</a>
+                <a href="service.html" class="nav-link">Service</a>
+                <a href="cost.html" class="nav-link">Cost</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-</div> 
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch for professional garage door service</p>
+        </div>
+    </section>
 
-<center><h1 id="door">ABC Garage Door Repair <br> & <br> Installation Service  </h1></center>
- <div id="home">
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Contact Section -->
+        <section class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <div class="form-header">
+                            <h2>Send Us a Message</h2>
+                            <p>Fill out the form below and we'll get back to you within 24 hours</p>
+                        </div>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="address">Property Address</label>
+                                <input type="text" id="address" name="address" placeholder="Street Address">
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" name="city">
+                                </div>
+                                <div class="form-group">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="state" value="WA">
+                                </div>
+                                <div class="form-group">
+                                    <label for="zip">ZIP Code</label>
+                                    <input type="text" id="zip" name="zip">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="serviceType">Service Needed</label>
+                                <select id="serviceType" name="serviceType">
+                                    <option value="">Select a service</option>
+                                    <option value="repair">Garage Door Repair</option>
+                                    <option value="installation">New Door Installation</option>
+                                    <option value="opener">Opener Repair/Installation</option>
+                                    <option value="spring">Spring Replacement</option>
+                                    <option value="maintenance">Maintenance Service</option>
+                                    <option value="emergency">Emergency Service</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Please describe your garage door issue or service needs..."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="preferredTime">Preferred Contact Time</label>
+                                <select id="preferredTime" name="preferredTime">
+                                    <option value="">Any time</option>
+                                    <option value="morning">Morning (8AM - 12PM)</option>
+                                    <option value="afternoon">Afternoon (12PM - 5PM)</option>
+                                    <option value="evening">Evening (5PM - 8PM)</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="contact-info-container">
+                        <div class="contact-info-card">
+                            <h3>Get In Touch</h3>
+                            <div class="contact-methods">
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <h4>Call Us</h4>
+                                        <p><a href="tel:206-123-1234">(206) 123-1234</a></p>
+                                        <span>Available 24/7 for emergencies</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <h4>Email Us</h4>
+                                        <p><a href="mailto:info@abcgaragedoor.com">info@abcgaragedoor.com</a></p>
+                                        <span>We respond within 24 hours</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <h4>Visit Us</h4>
+                                        <p>12345 12th PL S<br>SeaTac, WA 98168</p>
+                                        <span>By appointment only</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="business-hours-card">
+                            <h3>Business Hours</h3>
+                            <div class="hours-list">
+                                <div class="hours-item">
+                                    <span class="day">Monday - Friday</span>
+                                    <span class="time">7:00 AM - 7:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="day">Saturday</span>
+                                    <span class="time">8:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="day">Sunday</span>
+                                    <span class="time">9:00 AM - 5:00 PM</span>
+                                </div>
+                                <div class="hours-item emergency">
+                                    <span class="day">Emergency Service</span>
+                                    <span class="time">24/7 Available</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<form>
-<center><h1>Contact us </h1></center>
+        <!-- Emergency Service Banner -->
+        <section class="emergency-banner">
+            <div class="container">
+                <div class="emergency-content">
+                    <div class="emergency-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="emergency-text">
+                        <h3>Emergency Service Available</h3>
+                        <p>Car stuck in the garage? Door won't open? We provide 24/7 emergency service with no extra charges for evenings, weekends, or holidays!</p>
+                    </div>
+                    <div class="emergency-action">
+                        <a href="tel:206-123-1234" class="btn btn-primary btn-large">
+                            <i class="fas fa-phone"></i>
+                            Emergency: (206) 123-1234
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<lable for="first-name"> First-name </lable>
-<input type="text" id="first-name" required> <br><br>
- 
-<lable for="last-name"> Last-name </lable>
-<input type="text" id="lirst-name" required> <br><br>
+        <!-- Service Areas -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Service Areas</h2>
+                    <p>We proudly serve the greater Seattle metropolitan area</p>
+                </div>
+                
+                <div class="service-areas-grid">
+                    <div class="areas-list">
+                        <h3>Areas We Serve:</h3>
+                        <div class="areas-columns">
+                            <div class="area-column">
+                                <ul>
+                                    <li><i class="fas fa-map-marker-alt"></i> Seattle</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Bellevue</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Bothell</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Renton</li>
+                                </ul>
+                            </div>
+                            <div class="area-column">
+                                <ul>
+                                    <li><i class="fas fa-map-marker-alt"></i> SeaTac</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Redmond</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Kirkland</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Tacoma</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="areas-note">Don't see your city? <a href="tel:206-123-1234">Call us</a> - we may still be able to help!</p>
+                    </div>
+                    
+                    <div class="map-container">
+                        <a href="find.html" class="map-link">
+                            <img src="image/76.png" alt="Service area map" class="responsive-img">
+                            <div class="map-overlay">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <span>View Interactive Map</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<lable for="address"> Address</lable>
-<input type="text" id="address" required> <br><br>
+        <!-- What to Expect -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What to Expect When You Contact Us</h2>
+                    <p>Our professional process ensures you get the best service experience</p>
+                </div>
+                
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Initial Contact</h4>
+                            <p>One of our Customer Service Representatives will call you at the phone number listed to discuss your project and schedule an appointment time.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Professional Assessment</h4>
+                            <p>Our certified technician will arrive on time with a fully equipped service truck and perform a comprehensive 25-point safety inspection.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Transparent Pricing</h4>
+                            <p>You'll know the exact costs and options before we begin work. No surprises, no hidden fees - just honest, upfront pricing.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Quality Service</h4>
+                            <p>We complete your service quickly and professionally using the highest quality commercial-grade parts and materials available.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-City:<input class="tb10" id="posName" style="WIDTH: 100px" size="20" name="posName" required>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ABC Garage Door Service</h3>
+                    <p>Professional garage door repair and installation services in Seattle and surrounding areas.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (206) 123-1234</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 12345 12th PL S, SeaTac WA</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="service.html">Garage Door Repair</a></li>
+                        <li><a href="service.html">Door Installation</a></li>
+                        <li><a href="service.html">Opener Repair</a></li>
+                        <li><a href="service.html">Spring Replacement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="design.html">Design Options</a></li>
+                        <li><a href="cost.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ABC Garage Door Repair & Installation Service. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-State:<input class="tb10" id="posName" style="WIDTH: 90px" size="10" name="posName" required>
-Zip:<input class="tb10" id="posNumber" style="WIDTH: 90px" size="10" name="posNumber" required><br><br>
+    <script src="script.js"></script>
 
-<lable for="phone number">  Phone number </lable>
-<input type="text" id="phone number" required> <br><br>
+    <style>
+        /* Page-specific styles */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-600) 0%, var(--secondary-600) 100%);
+            color: white;
+            padding: calc(70px + var(--space-16)) 0 var(--space-16);
+            text-align: center;
+        }
 
-<lable for="email">  Email </lable>
-<input type="text" id="email" required> <br><br>
+        .page-header h1 {
+            font-size: var(--font-size-4xl);
+            font-weight: 700;
+            margin-bottom: var(--space-4);
+        }
 
+        .page-header p {
+            font-size: var(--font-size-lg);
+            opacity: 0.9;
+        }
 
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-12);
+        }
 
-<lable for="subject">Subject </lable>
-<input type="text" id="subject" required><br><br>
+        @media (min-width: 1024px) {
+            .contact-grid {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
 
-<lable for="message">Message </lable>
- <textarea id="message" name="message" rows="5" cols="40" required></textarea> <br> <br>
-<center><button>Send us email </button></center>
+        .contact-form-container {
+            background: white;
+            padding: var(--space-8);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-base);
+        }
 
-</form>
+        .form-header {
+            margin-bottom: var(--space-8);
+        }
 
-<p id="car">Car stuck in the Garage? Never pay extra for evenings, weekends or holidays! Calls answered by live person.
- We provide service 7 days a week plus after hours and emergency service. 
-If you have an emergency or are in need of a local technician right away, please call us 7 days a week.<br> You never pay extra for evenings, weekends or holidays!</p>
+        .form-header h2 {
+            font-size: var(--font-size-2xl);
+            font-weight: 600;
+            margin-bottom: var(--space-3);
+            color: var(--neutral-800);
+        }
 
-    <center>  <h3>Call us on: (206)123-1234</h3></center>
+        .form-header p {
+            color: var(--neutral-600);
+        }
 
-<p id="car">One of our Customer Service Representatives will call you at the phone number listed to discuss your project and schedule an appointment time with you. 
-Our representatives are available to respond to your emails 7 days a week during regular business hours.<br>
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-6);
+        }
 
-On occasion we send our clients additional information, service notices, Special Discounts and Offers available only to those on our list.
- You will receive an email asking you to confirm your contact information - We look forward to your involvement.</p>
-<br>
-<br>
-<center><strong>Office Address </strong> <br>
-<strong >12345 12th PL S.</strong> <br>
-<strong>Sea Tac WA-xxxxx </strong></center>
- </p>
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-4);
+        }
 
-<center><h1 id= "about"><a href="find.html">Find Our Location</a></h1></center>
+        @media (min-width: 640px) {
+            .form-row {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
 
-</div>
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
 
+        .form-group label {
+            font-weight: 500;
+            margin-bottom: var(--space-2);
+            color: var(--neutral-700);
+        }
 
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: var(--space-3);
+            border: 2px solid var(--neutral-300);
+            border-radius: var(--radius-md);
+            font-size: var(--font-size-base);
+            transition: var(--transition-fast);
+        }
 
-<div id="footer" >
-        <p>PRIVACY |  PRIVACY RIGHTS | DO NOT SELL MY INFORMATION | TERMS & CONDITIONS | <br>
-COPYRIGHT © 2021 ABC Garage Door Repair & Instalation Service. ALL RIGHTS RESERVED. </p>
-		  
-		</div>
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-500);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
 
+        .form-group input.error,
+        .form-group select.error,
+        .form-group textarea.error {
+            border-color: var(--error-500);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-info-container {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-6);
+        }
+
+        .contact-info-card,
+        .business-hours-card {
+            background: white;
+            padding: var(--space-6);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-base);
+        }
+
+        .contact-info-card h3,
+        .business-hours-card h3 {
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+            margin-bottom: var(--space-6);
+            color: var(--neutral-800);
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-6);
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-4);
+        }
+
+        .method-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .method-icon i {
+            font-size: var(--font-size-lg);
+            color: white;
+        }
+
+        .method-info h4 {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            margin-bottom: var(--space-1);
+            color: var(--neutral-800);
+        }
+
+        .method-info p {
+            margin-bottom: var(--space-1);
+        }
+
+        .method-info a {
+            color: var(--primary-600);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .method-info a:hover {
+            text-decoration: underline;
+        }
+
+        .method-info span {
+            font-size: var(--font-size-sm);
+            color: var(--neutral-500);
+        }
+
+        .hours-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-3);
+        }
+
+        .hours-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-3);
+            background: var(--neutral-50);
+            border-radius: var(--radius-md);
+        }
+
+        .hours-item.emergency {
+            background: var(--error-50);
+            color: var(--error-700);
+            font-weight: 600;
+        }
+
+        .emergency-banner {
+            background: linear-gradient(135deg, var(--error-500), #dc2626);
+            color: white;
+            padding: var(--space-12) 0;
+        }
+
+        .emergency-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-6);
+            align-items: center;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .emergency-content {
+                grid-template-columns: auto 1fr auto;
+                text-align: left;
+            }
+        }
+
+        .emergency-icon {
+            font-size: var(--font-size-3xl);
+        }
+
+        .emergency-text h3 {
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+            margin-bottom: var(--space-2);
+        }
+
+        .emergency-text p {
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        .emergency-action .btn {
+            background: white;
+            color: var(--error-500);
+            font-weight: 600;
+        }
+
+        .emergency-action .btn:hover {
+            background: var(--neutral-100);
+        }
+
+        .service-areas-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-12);
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .service-areas-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .areas-list h3 {
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+            margin-bottom: var(--space-6);
+            color: var(--neutral-800);
+        }
+
+        .areas-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-6);
+            margin-bottom: var(--space-6);
+        }
+
+        .area-column ul {
+            list-style: none;
+        }
+
+        .area-column li {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-2) 0;
+            color: var(--neutral-700);
+        }
+
+        .area-column i {
+            color: var(--primary-600);
+        }
+
+        .areas-note {
+            font-size: var(--font-size-sm);
+            color: var(--neutral-600);
+        }
+
+        .areas-note a {
+            color: var(--primary-600);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .map-container {
+            position: relative;
+        }
+
+        .map-link {
+            display: block;
+            position: relative;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            transition: var(--transition-base);
+        }
+
+        .map-link:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .map-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(59, 130, 246, 0.8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: var(--transition-base);
+        }
+
+        .map-link:hover .map-overlay {
+            opacity: 1;
+        }
+
+        .map-overlay i {
+            font-size: var(--font-size-3xl);
+            margin-bottom: var(--space-3);
+        }
+
+        .map-overlay span {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-8);
+        }
+
+        @media (min-width: 768px) {
+            .process-steps {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .process-step {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-4);
+            background: white;
+            padding: var(--space-6);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-base);
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+            color: white;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-xl);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            margin-bottom: var(--space-3);
+            color: var(--neutral-800);
+        }
+
+        .step-content p {
+            color: var(--neutral-600);
+            line-height: 1.6;
+            margin: 0;
+        }
+    </style>
 </body>
-
 </html>

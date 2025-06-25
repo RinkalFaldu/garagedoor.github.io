@@ -1,143 +1,549 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link href="style.css" rel="stylesheet" text="text/css">
-<style>
-#home{
-display:block;
-background:rgba(243,244,235,0.9);
-background-position:center;
-height:1100px;
- margin-bottom:0px;
-margin-right:165px;
-margin-left:165px;
-background-size:100%;
-padding-top:50px;
-margin-top:20px;
-border-radius: 25px 25px 0px 0px ;
-box-shadow: 5px 5px 5px 5px #888888;
- 
-}
-
-#footer{
-	background:#80F3FF;
-	min-height:40px;
-	border-radius: 0px 0px 20px 20px;
- 	box-shadow: 5px 5px 5px 5px #888888;
-       margin-bottom:0px;
-       margin-right:165px;
-       margin-left:165px;
-        background-size:100%;
-       padding-top:50px;
-      text-align:center;
- }
-
-.fast{
-font-size:40px;
-font-family:arial;
-display:block;
-margin-top:3px;
-margin-right:80px;
- margin-left:80px;
-border:1px solid black;
-border-radius: 25px 25px 25px 25px ;
-background:#2A14DB;
-color:white;
-}
-
-
-.fast:hover{
-           background-image:linear-gradient( #C8D9A0,  #A0D2D9, #CFD9B6, #D4CAD8, #D9BFAB,#8DD9C2 ,#DAD481);
-            color:#000000;
-           transition: .5s background-color;
-           text-align:center;
-          cursor:pointer;
-border:1px solid black;
-border-radius: 0px 0px 0px 0px ;
-          
-}
-
-.your{
-     font-size:18px;
-     padding:20px 50px 20px 50px;
-
-}
-
-.service{
-
-font-size:18px;
-     padding:20px 50px 20px 50px;
-
-}
-
-#broken{
-border-radius:50px 50px 50px 50px;
-border:2px solid black;
-
-}
-
-</style>
-
-<div class="navbar">
-<ul>
-<li><a href="index.html">Home</a> </li>
-<li><a href="about.html">About</a> </li>
-<li><a href="design.html">Design</a> </li>
-<li><a href="Gallary.html">Gallery</a> </li>
-<li><a href="service.html" id="onlink">Service</a> </li>
-<li><a href="cost.html">Cost</a> </li>
-<li><a href="contact.html">Contact</a> </li>
- </ul>
-</div> 
-
-<title>
-Garage Door Repair & Instalation Service
-</title>
-<center><h1 id="door">ABC Garage Door Repair <br> & <br> Installation Service  </h1></center>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - ABC Garage Door Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<div id="home">
-<center><h1 class="fast">Fast Responses and Quality Service </h1></center>
-<p class="your">Your time is too important to waste. 
-That is why the ABC Door technicians always arrive at your home on time and with a fully stocked service truck. 
-We work quickly and do the job right on the first visit so you do not have to worry.
- We also offer these unmatched services with our repairs:</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>ABC Garage Door</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="design.html" class="nav-link">Design</a>
+                <a href="Gallary.html" class="nav-link">Gallery</a>
+                <a href="service.html" class="nav-link active">Service</a>
+                <a href="cost.html" class="nav-link">Cost</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-<ul class="service">
-<li>Available 24 hours a day, 7 days a week</li>
-<li>Two-hour arrival window</li>
-<li>25-point safety inspection</li>
-<li>Superior parts and hardware</li>
-<li>Up-front pricing</li>
-<li>Lifetime warranty</li>
-<li>Fix Garage Door Torsion Spring</li>
-<li>Repairing and installation of Garage Door Openers</li>
-<li>Fix Broken Garage Door Cables</li>
-<li>Fix Broken or Bent Rollers, Bent Track, Rusted Track</li>
-<li>New Doors Installed</li>
-<li>Fix Noisy Garage Doors</li>
-<li>Replacement of sections or panels</li>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Professional Services</h1>
+            <p>Fast responses and quality service you can trust</p>
+        </div>
+    </section>
 
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Service Promise Section -->
+        <section class="section">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="content-text">
+                        <h2>Fast Responses and Quality Service</h2>
+                        <p>Your time is too important to waste. That is why ABC Door technicians always arrive at your home on time and with a fully stocked service truck. We work quickly and do the job right on the first visit so you don't have to worry.</p>
+                        
+                        <div class="service-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>24/7 Availability</h4>
+                                    <p>Emergency service available around the clock</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-tools"></i>
+                                <div>
+                                    <h4>Fully Equipped</h4>
+                                    <p>Complete service trucks with all necessary parts</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <h4>Lifetime Warranty</h4>
+                                    <p>Comprehensive warranty on all our work</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-image">
+                        <img src="image/76.png" alt="Service area map" class="responsive-img">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-</ul>
+        <!-- Services Grid -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Complete Garage Door Services</h2>
+                    <p>Professional repair, installation, and maintenance services</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h3>Spring Repair & Replacement</h3>
+                        <p>Expert torsion and extension spring repair with high-quality replacement parts and safety-first approach.</p>
+                        <ul>
+                            <li>Torsion spring replacement</li>
+                            <li>Extension spring repair</li>
+                            <li>Safety cable installation</li>
+                            <li>Spring adjustment & balancing</li>
+                        </ul>
+                    </div>
 
-<center><h2 class="fast" style="font-size:30px;">Find garage door service provider in seattle and Surrounding area</h2></center>
-<center> <img id="broken" src="image/76.png" alt="garage door" usemap="#image_map"></center>
-<map name="image_map">
-  <area alt="garage door service provider in Bothell area" title="garage door service provider in Bothell area" href="https://www.google.com/search?q=besi+garage+door+service+provider+in+renton+area&ei=YQzFYLakA8Ha9AOc_o7wCQ&oq=besi+garage+door+service+provider+in+renton+area&gs_lcp=Cgdnd3Mtd2l6EAM6BwgAEEcQsANQysUWWLnlFmCn7BZoAnABeACAAccBiAGhCZIBBDEwLjOYAQCgAQGqAQdnd3Mtd2l6yAEEwAEB&sclient=gws-wiz&ved=0ahUKEwj22I_B65LxAhVBLX0KHRy_A54Q4dUDCA4&uact=5" coords="264,59,314,107" shape="rect">
-  <area alt="garage door service provider in Bellevue area" title="garage door service provider in Bellevue area" href="https://www.google.com/search?q=besi+garage+door+service+provider+in+bellevue+area&ei=2A3FYNzeKvyT0PEPt8C8qAw&oq=besi+garage+door+service+provider+in+bellev+area&gs_lcp=Cgdnd3Mtd2l6EAEYADIECCEQCjoHCAAQRxCwA1D1mgRY9eIEYILvBGgBcAF4AIAB0QGIAdgKkgEFOS4yLjKYAQCgAQGqAQdnd3Mtd2l6yAEIwAEB&sclient=gws-wiz" coords="269,200,348,277" shape="rect">
-  <area alt="garage door service provider in Seattle area" title="garage door service provider in Seattle area" href="https://www.google.com/search?q=besi+garage+door+service+provider+in+seattle+area&ei=KQ7FYN_TJeTO0PEP3KaVkAw&oq=besi+garage+door+service+provider+in+seattel+area&gs_lcp=Cgdnd3Mtd2l6EAEYADIECCEQCjoHCAAQRxCwA1DdjQNYia0DYMG3A2gBcAF4AIABvwGIAbwLkgEEMTIuNJgBAKABAaoBB2d3cy13aXrIAQjAAQE&sclient=gws-wiz" coords="143,59,260,247" shape="rect">
-  <area alt="garage door service provider in Seattle area" title="garage door service provider in Seattle area" href="https://www.google.com/search?q=+garage+door+service+provider+in+renton+area&ei=vA7FYPPSJbms0PEPsv2rgAE&oq=+garage+door+service+provider+in+renton+area&gs_lcp=Cgdnd3Mtd2l6EAM6BwgAEEcQsANQvjpYhkBg50toAXABeACAAVeIAeMCkgEBNZgBAKABAaoBB2d3cy13aXrIAQjAAQE&sclient=gws-wiz&ved=0ahUKEwjzoPbg7ZLxAhU5FjQIHbL-ChAQ4dUDCA4&uact=5" coords="157,252,257,346" shape="rect">
-  <area alt="garage door service provider in Renton area" title="garage door service provider in Renton area" href="https://www.google.com/search?q=+garage+door+service+provider+in+renton+area&ei=vA7FYPPSJbms0PEPsv2rgAE&oq=+garage+door+service+provider+in+renton+area&gs_lcp=Cgdnd3Mtd2l6EAM6BwgAEEcQsANQvjpYhkBg50toAXABeACAAVeIAeMCkgEBNZgBAKABAaoBB2d3cy13aXrIAQjAAQE&sclient=gws-wiz&ved=0ahUKEwjzoPbg7ZLxAhU5FjQIHbL-ChAQ4dUDCA4&uact=5" coords="268,340,357,397" shape="rect">
-</map>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h3>Opener Repair & Installation</h3>
+                        <p>Professional garage door opener service including smart opener installation and programming.</p>
+                        <ul>
+                            <li>Opener installation & setup</li>
+                            <li>Motor repair & replacement</li>
+                            <li>Remote programming</li>
+                            <li>Smart home integration</li>
+                        </ul>
+                    </div>
 
-</div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-door-open"></i>
+                        </div>
+                        <h3>Door Installation</h3>
+                        <p>Complete garage door installation with professional fitting and quality materials for lasting performance.</p>
+                        <ul>
+                            <li>Residential door installation</li>
+                            <li>Commercial door systems</li>
+                            <li>Custom door fitting</li>
+                            <li>Hardware installation</li>
+                        </ul>
+                    </div>
 
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-road"></i>
+                        </div>
+                        <h3>Track & Cable Repair</h3>
+                        <p>Professional track alignment and cable replacement to ensure smooth and safe door operation.</p>
+                        <ul>
+                            <li>Track realignment</li>
+                            <li>Cable replacement</li>
+                            <li>Roller replacement</li>
+                            <li>Hardware adjustment</li>
+                        </ul>
+                    </div>
 
-<div id="footer" >
-        <p>PRIVACY |  PRIVACY RIGHTS | DO NOT SELL MY INFORMATION | TERMS & CONDITIONS | <br>
-COPYRIGHT © 2021 ABC Garage Door Repair & Instalation Service. ALL RIGHTS RESERVED. </p>  
-		</div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-volume-mute"></i>
+                        </div>
+                        <h3>Noise Reduction</h3>
+                        <p>Eliminate annoying garage door noise with professional lubrication and component replacement.</p>
+                        <ul>
+                            <li>Component lubrication</li>
+                            <li>Quiet roller installation</li>
+                            <li>Vibration dampening</li>
+                            <li>Belt drive conversion</li>
+                        </ul>
+                    </div>
 
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3>Safety Inspection</h3>
+                        <p>Comprehensive 25-point safety inspection to ensure your garage door system operates safely.</p>
+                        <ul>
+                            <li>25-point safety check</li>
+                            <li>Balance testing</li>
+                            <li>Safety feature verification</li>
+                            <li>Preventive maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Areas -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Service Areas</h2>
+                    <p>Professional garage door service throughout the Seattle metropolitan area</p>
+                </div>
+                
+                <div class="service-areas">
+                    <div class="area-map">
+                        <img src="image/76.png" alt="Service area map" class="responsive-img" usemap="#service-map">
+                        <map name="service-map">
+                            <area alt="Bothell garage door service" title="Bothell Area Service" href="#" coords="264,59,314,107" shape="rect">
+                            <area alt="Bellevue garage door service" title="Bellevue Area Service" href="#" coords="269,200,348,277" shape="rect">
+                            <area alt="Seattle garage door service" title="Seattle Area Service" href="#" coords="143,59,260,247" shape="rect">
+                            <area alt="Renton garage door service" title="Renton Area Service" href="#" coords="157,252,257,346" shape="rect">
+                        </map>
+                    </div>
+                    
+                    <div class="areas-list">
+                        <h3>We Serve These Areas:</h3>
+                        <div class="areas-grid">
+                            <div class="area-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Seattle</span>
+                            </div>
+                            <div class="area-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Bellevue</span>
+                            </div>
+                            <div class="area-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Bothell</span>
+                            </div>
+                            <div class="area-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Renton</span>
+                            </div>
+                            <div class="area-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>SeaTac</span>
+                            </div>
+                            <div class="area-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Redmond</span>
+                            </div>
+                            <div class="area-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Kirkland</span>
+                            </div>
+                            <div class="area-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Tacoma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Service -->
+        <section class="emergency-section">
+            <div class="container">
+                <div class="emergency-content">
+                    <div class="emergency-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="emergency-text">
+                        <h2>Emergency Garage Door Service</h2>
+                        <p>Car stuck in the garage? Door won't open? We provide 24/7 emergency service with no extra charges for evenings, weekends, or holidays!</p>
+                    </div>
+                    <div class="emergency-action">
+                        <a href="tel:206-123-1234" class="btn btn-primary btn-large">
+                            <i class="fas fa-phone"></i> Emergency Call: (206) 123-1234
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Need Professional Garage Door Service?</h2>
+                    <p>Get expert service with our 25-point safety inspection and lifetime warranty</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-large">Schedule Service</a>
+                        <a href="tel:206-123-1234" class="btn btn-outline btn-large">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ABC Garage Door Service</h3>
+                    <p>Professional garage door repair and installation services in Seattle and surrounding areas.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (206) 123-1234</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 12345 12th PL S, SeaTac WA</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="service.html">Garage Door Repair</a></li>
+                        <li><a href="service.html">Door Installation</a></li>
+                        <li><a href="service.html">Opener Repair</a></li>
+                        <li><a href="service.html">Spring Replacement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="design.html">Design Options</a></li>
+                        <li><a href="cost.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ABC Garage Door Repair & Installation Service. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <style>
+        /* Page-specific styles */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-600) 0%, var(--secondary-600) 100%);
+            color: white;
+            padding: calc(70px + var(--space-16)) 0 var(--space-16);
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: var(--font-size-4xl);
+            font-weight: 700;
+            margin-bottom: var(--space-4);
+        }
+
+        .page-header p {
+            font-size: var(--font-size-lg);
+            opacity: 0.9;
+        }
+
+        .service-highlights {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-6);
+            margin-top: var(--space-8);
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-4);
+            padding: var(--space-4);
+            background: var(--neutral-50);
+            border-radius: var(--radius-lg);
+            border-left: 4px solid var(--primary-500);
+        }
+
+        .highlight-item i {
+            font-size: var(--font-size-2xl);
+            color: var(--primary-600);
+            min-width: 40px;
+        }
+
+        .highlight-item h4 {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            margin-bottom: var(--space-1);
+            color: var(--neutral-800);
+        }
+
+        .highlight-item p {
+            color: var(--neutral-600);
+            margin: 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-8);
+        }
+
+        @media (min-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .services-grid {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        .service-item {
+            background: white;
+            padding: var(--space-8);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-base);
+            transition: var(--transition-base);
+            text-align: center;
+        }
+
+        .service-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-6);
+        }
+
+        .service-icon i {
+            font-size: var(--font-size-2xl);
+            color: white;
+        }
+
+        .service-item h3 {
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+            margin-bottom: var(--space-4);
+            color: var(--neutral-800);
+        }
+
+        .service-item p {
+            color: var(--neutral-600);
+            margin-bottom: var(--space-6);
+            line-height: 1.6;
+        }
+
+        .service-item ul {
+            list-style: none;
+            text-align: left;
+        }
+
+        .service-item ul li {
+            padding: var(--space-2) 0;
+            color: var(--neutral-700);
+            position: relative;
+            padding-left: var(--space-6);
+        }
+
+        .service-item ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success-500);
+            font-weight: bold;
+        }
+
+        .service-areas {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-12);
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .service-areas {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .areas-list h3 {
+            font-size: var(--font-size-2xl);
+            font-weight: 600;
+            margin-bottom: var(--space-6);
+            color: var(--neutral-800);
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-4);
+        }
+
+        .area-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+            padding: var(--space-3);
+            background: var(--neutral-50);
+            border-radius: var(--radius-md);
+        }
+
+        .area-item i {
+            color: var(--primary-600);
+        }
+
+        .area-item span {
+            font-weight: 500;
+            color: var(--neutral-700);
+        }
+
+        .emergency-section {
+            background: linear-gradient(135deg, var(--error-500), #dc2626);
+            color: white;
+            padding: var(--space-16) 0;
+        }
+
+        .emergency-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-8);
+            align-items: center;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .emergency-content {
+                grid-template-columns: auto 1fr auto;
+                text-align: left;
+            }
+        }
+
+        .emergency-icon {
+            font-size: var(--font-size-4xl);
+        }
+
+        .emergency-text h2 {
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+            margin-bottom: var(--space-3);
+        }
+
+        .emergency-text p {
+            font-size: var(--font-size-lg);
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        .emergency-action .btn {
+            background: white;
+            color: var(--error-500);
+            font-weight: 700;
+        }
+
+        .emergency-action .btn:hover {
+            background: var(--neutral-100);
+            transform: translateY(-2px);
+        }
+    </style>
 </body>
 </html>

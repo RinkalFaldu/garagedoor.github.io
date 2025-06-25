@@ -1,404 +1,529 @@
 <!DOCTYPE html>
-<html>
-  <head>
-<link href="style.css" rel="stylesheet" text="text/css">
-<style>
-#home{
-display:block;
-background:rgba(243,244,235,0.9);
-background-position:center;
-height:1010px;
- margin-bottom:0px;
-margin-right:165px;
-margin-left:165px;
-background-size:100%;
-padding-top:50px;
-margin-top:20px;
-border-radius: 25px 25px 0px 0px ;
-box-shadow: 5px 5px 5px 5px #888888;
- 
-
-  
-}
-
-#toggleContainer label { 
-  text-align: center;
-  width: 90px;
-}
-
-#container {
-  height: 100vh;
-  width: 100%;
-  box-sizing: border-box;
- margin-top: 3vh;
- margin-right: 50vh;
- margin-left: 5vh;
-padding:5px 50px 20px 50px;
-}
-
-#toggleContainer {
-  height: 10vh;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 95vw;
-  position: absolute;
-}
-
-#tilesContainer {
-  min-height: 90vh;
-  width: 100vw;
-  margin-top: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  align-content: center;
-  
-}
-
-.tileItem {
-  width: 250px;
-  height: 250px;
-  margin: 5px;
-  border-radius: 5px;
-  
-  transition: all 0.5s ease;
-}
-
-.tileItem:hover {
-   transform: scale(1.05);
-  transition: all 0.5s ease;
-}
-
-#galleryContainer { 
-  height: 500px;
-  width: 800px;
-  background: transparent;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  position: relative;
-}
-
-#toggle {
-  height: 10vh;
-  width: 200px;
-  display: flex;
-  align-items: center;
-  margin: 10px;
-}
-
-#tilesView {
-  min-height: 100vh;
-  width: 100vw;
-  background: rgb(246,210,106);
-  background-image:linear-gradient( #EB9188,#CF82F5,#82A3DF,#9DF5D4,#C7EB9B);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-#galleryView {
-  height: 100vh;
-  width: 100vw;
-  background: rgb(246,210,106);
-  background-image:linear-gradient( #EB9188,#CF82F5,#82A3DF,#9DF5D4,#C7EB9B);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#outer3 {
-  width: 100px;
-  height: 40px;
-  background-color: white;
-  margin: 10px auto;
-  border-radius: 3px;
-  border: 2px solid white;
-  transition: all 0.5s;
-}
-
-#slider3 {
-  height: 36px;
-  width: 46px;
-  background-color: orange;
-  border-radius: 3px;  
-  transition: all 0.5s;
-}
-
-#slider3.active {
-  -webkit-transform: translatex(50px);
-  -ms-transform: translatex(50px);
-  -o-transform: translatex(50px);
-  transform: translatex(50px);
-  transition: all 0.5s;
-  background-color: orange;
-}
-
-#outer3.outerActive {
-  background-color: white;
-  border: 2px solid white;
-  transition: all 0.5s;
-}
-
-#mainView {
-  height: 450px;
-  width: 450px;  
-  border-radius: 5px;
-  background-color: #eb9100;
-  margin-left: 10px;
-  margin-right: 10px;
-  z-index: 1;
-  transition: all 1s;  
-}
-
-#mainView:hover {
-  transform: scale(1.2);
-  transition: all 1s;   
-}
-
-#leftView {
-  height: 400px;
-  width: 150px;
-  opacity: 0.5;
-  border-radius: 5px;
-  transform: skewy(5deg);
-  transform-origin: top right;
-  background-color: #eb9100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 1s;  
-}
-
-#leftView:hover {
-  opacity: 1;
-  transition: all 1s;
-}
-
-#rightView {
-  height: 400px;
-  width: 150px;
-  opacity: 0.5;
-  border-radius: 5px;
-  transform: skewy(-5deg);
-  transform-origin: top left;
-  background-color: #eb9100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- transition: all 1s;
-}
-
-#rightView:hover {
-  opacity: 1;
-  transition: all 1s;
-}
-
-.navBtns {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: none;
-  position: absolute;
-  opacity: 0.8;
-  background-color: transparent;
-  cursor: pointer;
-  color: white;
-}
-
-.navBtns:hover {
-  opacity: 1;
-  transition: all 1s;
-  background-color: #eb9100;
-}
-
-#navLeft {
-  left: 50px;
-}
-
-#navRight {
-  right: 50px;
-}
-
-#linkTag { 
-  cursor: pointer;
-  z-index: 1;
-  box-sizing: border-box;
-}
-
-
-
-</style>
-<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>window otion</title>
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
-     <script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
-  
-      </head>
-  <body>
-<div class="navbar">
-<ul>
-<li><a href="index.html">Home</a> </li>
-<li><a href="about.html">About</a> </li>
-<li><a href="design.html">Design</a> </li>
-<li><a href="Gallary.html"id="onlink">Gallery</a> </li>
-<li><a href="service.html">Service</a> </li>
-<li><a href="cost.html">Cost</a> </li>
-<li><a href="contact.html">Contact</a> </li>
- </ul>
-
-</div> 
-<title>
-Garage Door Repair & Instalation Service
-</title>
-<center><h1 id="door">ABC Garage Door Repair <br> & <br> Installation Service  </h1></center>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - ABC Garage Door Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-
-
-    <div id="container">
-      <div id="toggleContainer">
-         <label>Carousel</label>
-         <div id="toggle">
-           <div id="outer3">
-              <div id="slider3"></div>
-           </div>
-           <label>Tiles</label>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>ABC Garage Door</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="design.html" class="nav-link">Design</a>
+                <a href="Gallary.html" class="nav-link active">Gallery</a>
+                <a href="service.html" class="nav-link">Service</a>
+                <a href="cost.html" class="nav-link">Cost</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-      </div>
-      <div id="galleryView">
-        <div id="galleryContainer">
-           <div id="leftView"></div>
-           <button id="navLeft" class="navBtns"><i class="fas fa-arrow-left fa-3x"></i></button>
-           <a id="linkTag">
-              <div id="mainView"></div>
-           </a>
-           <div id="rightView"></div>
-           <button id="navRight" class="navBtns"><i class="fas fa-arrow-right fa-3x"></i></button>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Work Gallery</h1>
+            <p>See our professional garage door installations and repairs</p>
         </div>
-      </div>
-      <div id="tilesView">
-        <div id="tilesContainer"></div>
-      </div>
-    </div>
+    </section>
 
-<script>
-document.getElementById("outer3").addEventListener("click", toggleState3);
-    
-function toggleState3() {
-  let galleryView = document.getElementById("galleryView")
-  let tilesView = document.getElementById("tilesView")
-  let outer = document.getElementById("outer3");
-  let slider = document.getElementById("slider3");
-  let tilesContainer = document.getElementById("tilesContainer");
-  if (slider.classList.contains("active")) {
-    slider.classList.remove("active");
-    outer.classList.remove("outerActive");
-    galleryView.style.display = "flex";
-    tilesView.style.display = "none";
-    
-    while (tilesContainer.hasChildNodes()) {
-      tilesContainer.removeChild(tilesContainer.firstChild)
-      }  
-  } else {
-    slider.classList.add("active");
-    outer.classList.add("outerActive");
-    galleryView.style.display = "none";
-    tilesView.style.display = "flex";
-     
-    for (let i = 0; i < imgObject.length - 1; i++) {
-      let tileItem = document.createElement("div");
-      tileItem.classList.add("tileItem");
-      tileItem.style.background =  "url(" + imgObject[i] + ")";
-      tileItem.style.backgroundSize = "contain";  
-      tilesContainer.appendChild(tileItem);      
-    }
-  };
-}
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Gallery Controls -->
+        <section class="gallery-controls">
+            <div class="container">
+                <div class="view-toggle">
+                    <span class="toggle-label">Carousel</span>
+                    <div class="toggle-switch" id="viewToggle">
+                        <div class="toggle-slider"></div>
+                    </div>
+                    <span class="toggle-label">Grid</span>
+                </div>
+            </div>
+        </section>
 
-let imgObject = [
-"image/145.jpg",
-"image/148.jpg",
-"image/149.jpg",
-"image/150.jpg",
-"image/151.jpg",
-"image/152.jpg",
-"image/153.jpg",
-"image/154.jpg",
-"image/155.jpg",
+        <!-- Carousel View -->
+        <section class="carousel-view" id="carouselView">
+            <div class="container">
+                <div class="carousel-container">
+                    <button class="carousel-btn carousel-prev" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="carousel-images">
+                        <div class="carousel-side left-image" id="leftImage"></div>
+                        <div class="carousel-main" id="mainImage"></div>
+                        <div class="carousel-side right-image" id="rightImage"></div>
+                    </div>
+                    
+                    <button class="carousel-btn carousel-next" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="carousel-info">
+                    <h3 id="imageTitle">Professional Garage Door Installation</h3>
+                    <p id="imageDescription">High-quality garage door installation with attention to detail</p>
+                </div>
+            </div>
+        </section>
 
+        <!-- Grid View -->
+        <section class="grid-view hidden" id="gridView">
+            <div class="container">
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Images will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
 
+        <!-- Project Categories -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Project Categories</h2>
+                    <p>Explore different types of garage door projects we've completed</p>
+                </div>
+                
+                <div class="category-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="residential">Residential</button>
+                    <button class="filter-btn" data-filter="commercial">Commercial</button>
+                    <button class="filter-btn" data-filter="repair">Repairs</button>
+                    <button class="filter-btn" data-filter="installation">Installations</button>
+                </div>
+                
+                <div class="projects-showcase">
+                    <div class="project-item" data-category="residential installation">
+                        <img src="image/145.jpg" alt="Residential Installation" class="responsive-img">
+                        <div class="project-overlay">
+                            <h4>Modern Residential Door</h4>
+                            <p>Contemporary design installation</p>
+                        </div>
+                    </div>
+                    <div class="project-item" data-category="residential repair">
+                        <img src="image/148.jpg" alt="Door Repair" class="responsive-img">
+                        <div class="project-overlay">
+                            <h4>Spring Replacement</h4>
+                            <p>Professional repair service</p>
+                        </div>
+                    </div>
+                    <div class="project-item" data-category="commercial installation">
+                        <img src="image/149.jpg" alt="Commercial Installation" class="responsive-img">
+                        <div class="project-overlay">
+                            <h4>Commercial Overhead Door</h4>
+                            <p>Heavy-duty commercial installation</p>
+                        </div>
+                    </div>
+                    <div class="project-item" data-category="residential installation">
+                        <img src="image/150.jpg" alt="Carriage Style Door" class="responsive-img">
+                        <div class="project-overlay">
+                            <h4>Carriage House Style</h4>
+                            <p>Traditional design with modern functionality</p>
+                        </div>
+                    </div>
+                    <div class="project-item" data-category="residential installation">
+                        <img src="image/151.jpg" alt="Glass Panel Door" class="responsive-img">
+                        <div class="project-overlay">
+                            <h4>Glass Panel Design</h4>
+                            <p>Modern glass and aluminum construction</p>
+                        </div>
+                    </div>
+                    <div class="project-item" data-category="repair">
+                        <img src="image/152.jpg" alt="Opener Repair" class="responsive-img">
+                        <div class="project-overlay">
+                            <h4>Opener Replacement</h4>
+                            <p>Smart garage door opener installation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-];
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Start Your Project?</h2>
+                    <p>Join our gallery of satisfied customers with professional garage door service</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-large">Get Free Quote</a>
+                        <a href="tel:206-123-1234" class="btn btn-outline btn-large">
+                            <i class="fas fa-phone"></i> Call Today
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-let mainImg = 0;
-let prevImg = imgObject.length - 3;
-let nextImg = 1;
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ABC Garage Door Service</h3>
+                    <p>Professional garage door repair and installation services in Seattle and surrounding areas.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (206) 123-1234</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 12345 12th PL S, SeaTac WA</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="service.html">Garage Door Repair</a></li>
+                        <li><a href="service.html">Door Installation</a></li>
+                        <li><a href="service.html">Opener Repair</a></li>
+                        <li><a href="service.html">Spring Replacement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="design.html">Design Options</a></li>
+                        <li><a href="cost.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ABC Garage Door Repair & Installation Service. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-function loadGallery() {
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
 
-  let mainView = document.getElementById("mainView");
-  mainView.style.background = "url(" + imgObject[mainImg] + ")";
+    <style>
+        /* Page-specific styles */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-600) 0%, var(--secondary-600) 100%);
+            color: white;
+            padding: calc(70px + var(--space-16)) 0 var(--space-16);
+            text-align: center;
+        }
 
-  let leftView = document.getElementById("leftView");
-  leftView.style.background = "url(" + imgObject[prevImg] + ")";
-  
-  let rightView = document.getElementById("rightView");
-  rightView.style.background = "url(" + imgObject[nextImg] + ")";
-  
-  let linkTag = document.getElementById("linkTag")
-  linkTag.href = imgObject[mainImg];
+        .page-header h1 {
+            font-size: var(--font-size-4xl);
+            font-weight: 700;
+            margin-bottom: var(--space-4);
+        }
 
-};
+        .page-header p {
+            font-size: var(--font-size-lg);
+            opacity: 0.9;
+        }
 
-function scrollRight() {
-  
-  prevImg = mainImg;
-  mainImg = nextImg;
-  if (nextImg >= (imgObject.length -1)) {
-    nextImg = 0;
-  } else {
-    nextImg++;
-  }; 
-  loadGallery();
-};
+        .gallery-controls {
+            padding: var(--space-8) 0;
+            background: var(--neutral-100);
+        }
 
-function scrollLeft() {
-  nextImg = mainImg
-  mainImg = prevImg;
-   
-  if (prevImg === 0) {
-    prevImg = imgObject.length - 3;
-  } else {
-    prevImg--;
-  };
-  loadGallery();
-};
+        .view-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-4);
+        }
 
-document.getElementById("navRight").addEventListener("click", scrollRight);
-document.getElementById("navLeft").addEventListener("click", scrollLeft);
-document.getElementById("rightView").addEventListener("click", scrollRight);
-document.getElementById("leftView").addEventListener("click", scrollLeft);
-document.addEventListener('keyup',function(e){
-    if (e.keyCode === 37) {
-    scrollLeft();
-  } else if(e.keyCode === 39) {
-    scrollRight();
-  }
-});
+        .toggle-label {
+            font-weight: 500;
+            color: var(--neutral-600);
+        }
 
-loadGallery();
-</script>
+        .toggle-switch {
+            width: 60px;
+            height: 30px;
+            background: var(--neutral-300);
+            border-radius: var(--radius-full);
+            position: relative;
+            cursor: pointer;
+            transition: var(--transition-base);
+        }
 
+        .toggle-switch.active {
+            background: var(--primary-500);
+        }
 
+        .toggle-slider {
+            width: 26px;
+            height: 26px;
+            background: white;
+            border-radius: var(--radius-full);
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            transition: var(--transition-base);
+            box-shadow: var(--shadow-sm);
+        }
 
+        .toggle-switch.active .toggle-slider {
+            transform: translateX(30px);
+        }
 
-  </body>
+        /* Carousel Styles */
+        .carousel-view {
+            padding: var(--space-16) 0;
+        }
+
+        .carousel-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-6);
+            margin-bottom: var(--space-8);
+        }
+
+        .carousel-images {
+            display: flex;
+            align-items: center;
+            gap: var(--space-4);
+        }
+
+        .carousel-main {
+            width: 400px;
+            height: 300px;
+            border-radius: var(--radius-xl);
+            background-size: cover;
+            background-position: center;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition-base);
+            cursor: pointer;
+        }
+
+        .carousel-main:hover {
+            transform: scale(1.05);
+        }
+
+        .carousel-side {
+            width: 150px;
+            height: 200px;
+            border-radius: var(--radius-lg);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.7;
+            transition: var(--transition-base);
+            cursor: pointer;
+        }
+
+        .carousel-side:hover {
+            opacity: 1;
+        }
+
+        .left-image {
+            transform: perspective(400px) rotateY(15deg);
+        }
+
+        .right-image {
+            transform: perspective(400px) rotateY(-15deg);
+        }
+
+        .carousel-btn {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: var(--radius-full);
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-lg);
+            color: var(--primary-600);
+            transition: var(--transition-base);
+            box-shadow: var(--shadow-base);
+        }
+
+        .carousel-btn:hover {
+            background: white;
+            transform: scale(1.1);
+        }
+
+        .carousel-prev {
+            left: -80px;
+        }
+
+        .carousel-next {
+            right: -80px;
+        }
+
+        .carousel-info {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .carousel-info h3 {
+            font-size: var(--font-size-2xl);
+            font-weight: 600;
+            margin-bottom: var(--space-3);
+            color: var(--neutral-800);
+        }
+
+        .carousel-info p {
+            color: var(--neutral-600);
+            font-size: var(--font-size-lg);
+        }
+
+        /* Grid Styles */
+        .grid-view {
+            padding: var(--space-16) 0;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-6);
+        }
+
+        .grid-item {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            transition: var(--transition-base);
+            cursor: pointer;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Project Categories */
+        .category-filters {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-4);
+            margin-bottom: var(--space-12);
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: var(--space-3) var(--space-6);
+            border: 2px solid var(--primary-200);
+            background: white;
+            color: var(--primary-600);
+            border-radius: var(--radius-full);
+            cursor: pointer;
+            transition: var(--transition-base);
+            font-weight: 500;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-600);
+            color: white;
+        }
+
+        .projects-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-8);
+        }
+
+        .project-item {
+            position: relative;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            transition: var(--transition-base);
+            cursor: pointer;
+        }
+
+        .project-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .project-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: var(--space-6);
+            transform: translateY(100%);
+            transition: var(--transition-base);
+        }
+
+        .project-item:hover .project-overlay {
+            transform: translateY(0);
+        }
+
+        .project-overlay h4 {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            margin-bottom: var(--space-2);
+        }
+
+        .project-overlay p {
+            font-size: var(--font-size-sm);
+            opacity: 0.9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .carousel-main {
+                width: 300px;
+                height: 225px;
+            }
+
+            .carousel-side {
+                width: 100px;
+                height: 150px;
+            }
+
+            .carousel-btn {
+                width: 40px;
+                height: 40px;
+                font-size: var(--font-size-base);
+            }
+
+            .carousel-prev {
+                left: -50px;
+            }
+
+            .carousel-next {
+                right: -50px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .carousel-side {
+                display: none;
+            }
+
+            .carousel-prev {
+                left: 10px;
+            }
+
+            .carousel-next {
+                right: 10px;
+            }
+        }
+    </style>
+</body>
 </html>
