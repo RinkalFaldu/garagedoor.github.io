@@ -1,161 +1,310 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link href="style.css" rel="stylesheet" text="text/css">
-<style>
-
-#home{
-display:block;
-background:rgba(243,244,235,0.9);
-background-position:center;
-height:1010px;
- margin-bottom:0px;
-margin-right:165px;
-margin-left:165px;
-background-size:100%;
-padding-top:50px;
-margin-top:20px;
-border-radius: 25px 25px 0px 0px ;
-box-shadow: 5px 5px 5px 5px #888888;
- 
-}
-
-#footer{
-	background:#80F3FF;
-	min-height:40px;
-	border-radius: 0px 0px 20px 20px;
- 	box-shadow: 5px 5px 5px 5px #888888;
-       margin-bottom:0px;
-       margin-right:165px;
-       margin-left:165px;
-        background-size:100%;
-       padding-top:50px;
-      text-align:center;
- }
-
-#about{
-display:block;
-margin-top:3px;
-margin-right:20px;
- margin-left:20px;
-border:1px solid black;
-border-radius: 25px 25px 25px 25px ;
-background:#2A14DB;
-color:white;
-
-}
-
-#about:hover{
-           background-image:linear-gradient( #C8D9A0,  #A0D2D9, #CFD9B6, #D4CAD8, #D9BFAB,#8DD9C2 ,#DAD481);
-            color:#000000;
-           transition: .5s background-color;
-           text-align:center;
-          cursor:pointer;
-border:1px solid black;
-border-radius: 0px 0px 0px 0px ;
-          
-}
-
-#ABC {
-text-align:left;
-margin-right:20px;
- margin-left:20px;
-font-size:18px;
-
-}
-
-
-#but {
-text-align:center;
-margin-right:20px;
- margin-left:20px;
-font-size:23px;
-}
-
-img {
-   position: absolute;
-   
-}
-
-#broken {
- left: 250px;
-   top: 930px;
-z-index:1;
-hight:400px;
-width:400px;
-
-   
-}
-#good {
- left: 250px;
-   top: 1180px;
-   z-index:2;
-hight:400px;
-width:400px;
-}
-
-#new {
-left: 700px;
- top: 930px;
-hight:1800px;
-width:620px;
-
-}
-</style>
-
-<div class="navbar">
-<ul>
-<li><a href="index.html">Home</a> </li>
-<li><a href="about.html"id="onlink">About</a> </li>
-<li><a href="design.html">Design</a> </li>
-<li><a href="Gallary.html">Gallery</a> </li>
-<li><a href="service.html">Service</a> </li>
-<li><a href="cost.html">Cost</a> </li>
-<li><a href="contact.html">Contact</a> </li>
- </ul>
-
-</div> 
-
-<title>
-Garage Door Repair & Installation Service
-</title>
-<center><h1 id="door">ABC Garage Door Repair <br> & <br> Installation Service  </h1></center>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ABC Garage Door Repair & Installation Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<div id="home">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>ABC Garage Door</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="design.html" class="nav-link">Design</a>
+                <a href="Gallary.html" class="nav-link">Gallery</a>
+                <a href="service.html" class="nav-link">Service</a>
+                <a href="cost.html" class="nav-link">Cost</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-<center><h1 id= "about" style="font-size:40px;font-family:arial">About ABC Garage Door Repair & Installation Service</h1></center>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About ABC Garage Door Service</h1>
+            <p>Your trusted local garage door experts since 2013</p>
+        </div>
+    </section>
 
-<p id="ABC">ABC Garage Door Services is a family owned local business. 
-We have been in the industry since 2013, operating in our home town of Seatac but with time, we have grown to serve in the greater Seattle area.
- Our passion for garage door installation and repair has made us one of the go-to emerging companies in this region’s home improvement market.<br><br>
-Our team is supervised by a certified mechanical engineer. We know we are only as good as our customers say we are – our reviews prove it and we aim to keep it that way. 
-We realize the value you place on your home, and that is why we approach our work with the following values:</p>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- About Section -->
+        <section class="section">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="content-text">
+                        <h2>Family Owned Local Business</h2>
+                        <p>ABC Garage Door Services is a family owned local business. We have been in the industry since 2013, operating in our home town of SeaTac but with time, we have grown to serve in the greater Seattle area. Our passion for garage door installation and repair has made us one of the go-to emerging companies in this region's home improvement market.</p>
+                        
+                        <p>Our team is supervised by a certified mechanical engineer. We know we are only as good as our customers say we are – our reviews prove it and we aim to keep it that way. We realize the value you place on your home, and that is why we approach our work with the following values:</p>
+                    </div>
+                    <div class="content-image">
+                        <img src="image/18.jpg" alt="Garage door before repair" class="responsive-img">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<ul id="ul" style="font-size:18px;">
-<li><strong>Integrity</strong> – We are committed to building lasting relationships with our customers</li>
-<li><strong>Passion</strong> – We care about and take pride in the nature and outcome of our work</li>
-<li><strong>Value</strong> – We ensure that the client gets the best balance between cost and value</li>
-<li><strong>Service</strong> – We endeavor to be a productive part of our community’s business ecosystem</li>
+        <!-- Values Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Core Values</h2>
+                    <p>The principles that guide everything we do</p>
+                </div>
+                
+                <div class="values-grid">
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Integrity</h3>
+                        <p>We are committed to building lasting relationships with our customers through honest and transparent service.</p>
+                    </div>
+                    
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Passion</h3>
+                        <p>We care about and take pride in the nature and outcome of our work, ensuring excellence in every project.</p>
+                    </div>
+                    
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3>Value</h3>
+                        <p>We ensure that the client gets the best balance between cost and value for their investment.</p>
+                    </div>
+                    
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Service</h3>
+                        <p>We endeavor to be a productive part of our community's business ecosystem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-</ul>
+        <!-- Before/After Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>See the Difference</h2>
+                    <p>Professional garage door repair and installation results</p>
+                </div>
+                
+                <div class="before-after-grid">
+                    <div class="before-after-item">
+                        <img src="image/18.jpg" alt="Before repair" class="responsive-img">
+                        <div class="image-label">Before</div>
+                    </div>
+                    <div class="before-after-item">
+                        <img src="image/17.jpg" alt="After repair" class="responsive-img">
+                        <div class="image-label">After</div>
+                    </div>
+                </div>
+                
+                <div class="showcase-image">
+                    <img src="image/14.jpg" alt="Professional garage door installation" class="responsive-img">
+                </div>
+            </div>
+        </section>
 
-<h2 id="but">BUT DON’T JUST TAKE OUR WORD FOR IT.
- CALL US AND GET A FIRST HAND EXPERIENCE OF THE BEST GARAGE DOOR SERVICE IN THE SEATTLE AREA</h2>
-<img id="broken" src="image/18.jpg" alt="garage door">
- <img  id="good" src="image/17.jpg" alt="door">
-<img id="new" src="image/14.jpg" alt="door">
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Don't Just Take Our Word For It</h2>
+                    <p>Call us and get a first-hand experience of the best garage door service in the Seattle area!</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-large">Get Free Estimate</a>
+                        <a href="tel:206-123-1234" class="btn btn-outline btn-large">
+                            <i class="fas fa-phone"></i> (206) 123-1234
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ABC Garage Door Service</h3>
+                    <p>Professional garage door repair and installation services in Seattle and surrounding areas.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (206) 123-1234</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 12345 12th PL S, SeaTac WA</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="service.html">Garage Door Repair</a></li>
+                        <li><a href="service.html">Door Installation</a></li>
+                        <li><a href="service.html">Opener Repair</a></li>
+                        <li><a href="service.html">Spring Replacement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="design.html">Design Options</a></li>
+                        <li><a href="cost.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ABC Garage Door Repair & Installation Service. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <script src="script.js"></script>
 
+    <style>
+        /* Page-specific styles */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-600) 0%, var(--secondary-600) 100%);
+            color: white;
+            padding: calc(70px + var(--space-16)) 0 var(--space-16);
+            text-align: center;
+        }
 
-</div>
+        .page-header h1 {
+            font-size: var(--font-size-4xl);
+            font-weight: 700;
+            margin-bottom: var(--space-4);
+        }
 
+        .page-header p {
+            font-size: var(--font-size-lg);
+            opacity: 0.9;
+        }
 
-<div id="footer" >
-        <p>PRIVACY |  PRIVACY RIGHTS | DO NOT SELL MY INFORMATION | TERMS & CONDITIONS | <br>
-COPYRIGHT © 2021 ABC Garage Door Repair & Instalation Service. ALL RIGHTS RESERVED. </p>  
-		</div>
+        .values-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-8);
+        }
 
+        @media (min-width: 640px) {
+            .values-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .values-grid {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+
+        .value-item {
+            text-align: center;
+            padding: var(--space-8);
+            background: white;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-base);
+            transition: var(--transition-base);
+        }
+
+        .value-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-6);
+        }
+
+        .value-icon i {
+            font-size: var(--font-size-2xl);
+            color: white;
+        }
+
+        .value-item h3 {
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+            margin-bottom: var(--space-4);
+            color: var(--neutral-800);
+        }
+
+        .value-item p {
+            color: var(--neutral-600);
+            line-height: 1.6;
+        }
+
+        .before-after-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-8);
+            margin-bottom: var(--space-12);
+        }
+
+        @media (min-width: 768px) {
+            .before-after-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .before-after-item {
+            position: relative;
+        }
+
+        .image-label {
+            position: absolute;
+            top: var(--space-4);
+            left: var(--space-4);
+            background: var(--primary-600);
+            color: white;
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            font-size: var(--font-size-sm);
+        }
+
+        .showcase-image {
+            text-align: center;
+        }
+
+        .showcase-image img {
+            max-width: 600px;
+            width: 100%;
+        }
+    </style>
 </body>
 </html>

@@ -1,142 +1,216 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link href="style.css" rel="stylesheet" text="text/css">
-<style>
-#home{
-display:block;
-background:rgba(243,244,235,0.9);
-background-position:center;
-height:1010px;
- margin-bottom:0px;
-margin-right:165px;
-margin-left:165px;
-background-size:100%;
-padding-top:50px;
-margin-top:20px;
-border-radius: 25px 25px 0px 0px ;
-box-shadow: 5px 5px 5px 5px #888888;
- 
-
-}
-#when {
-text-align:center;
-display:block;
-border:1px solid black;
-margin-right:200px;
-margin-left:200px;
-font-size:30px;
-border-radius: 25px 25px 25px 25px ;
-background:#2A14DB;
-color:white;
-}
- #when:hover {
-           background-image:linear-gradient(#C8D9A0,  #A0D2D9, #CFD9B6, #D4CAD8, #D9BFAB,#8DD9C2 ,#DAD481);
-            color:#000000;
-           transition: .5s background-color;
-           text-align:center;
-          cursor:pointer;
-border:1px solid black;
-border-radius: 0px 0px 0px 0px ;
-
-}
-
-#why {
-text-align:center;
-display:block;
-border:1px solid black;
-margin-right:200px;
-margin-left:200px;
-font-size:30px;
-border-radius: 25px 25px 25px 25px ;
-background:#2A14DB;
-color:white;
-
-
-}
-#why:hover{
-            background-image:linear-gradient(to right, #C8D9A0,  #A0D2D9, #CFD9B6, #D4CAD8, #D9BFAB,#8DD9C2 ,#DAD481);
-           color:black;
-	   transition: .5s background-color;
-          text-align:center;
-         cursor:pointer;
-border:1px solid black;
-border-radius: 0px 0px 0px 0px ;
-}
-
-#footer{
-	background:#80F3FF;
-	min-height:40px;
-	border-radius: 0px 0px 20px 20px;
- 	box-shadow: 5px 5px 5px 5px #888888;
-       margin-bottom:0px;
-       margin-right:165px;
-       margin-left:165px;
-        background-size:100%;
-       padding-top:50px;
-      text-align:center;
- }
-</style>
-
-<div class="navbar">
-<ul>
-<li><a href="index.html"id="onlink">Home</a> </li>
-<li><a href="about.html">About</a> </li>
-<li><a href="design.html">Design</a> </li>
-<li><a href="Gallary.html">Gallery</a> </li>
-<li><a href="service.html">Service</a> </li>
-<li><a href="cost.html">Cost</a> </li>
-<li><a href="contact.html">Contact</a> </li>
- </ul>
-</div> 
-
-<title>
-Garage Door Repair & Instalation Service
-</title>
-<center><h1 id="door">ABC Garage Door Repair <br> & <br> Installation Service  </h1></center>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Garage Door Repair & Installation Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<div id="home">
-<h2 id="why">Why you choose us? </h2>
-<p class= "our" style="color:black;font-size:18px;padding-left:20px;" >Our goal is to have our clients satisfied with our quick, reliable and high quality garage door services. We have years of experience and thousands of satisfied customers. We will be glad to make you another happy customer.quality service is our watch word. Despite our competitive price, we never compromise the quality of the repair services we offer. All our trained technicians are committed to providing the best services that will keep your garage door working for a very long period of time. Also the garage door components and accessories we install are always of the best brand. What makes us, unique and outstanding from others is that we do not only offer repair and installation services but give maintenance tips to our customers. We show you the basic up keeps and how to apply lubricant when needed. Observing this little maintenance tips will go a long way in preventing your garage doors from failing. Thereby saving you some money in the long run. We are committed to offering you 100% guaranteed satisfaction and we will give you fast and courteous service that you can rely upon! Whether your garage door repair Seattle or any of the surrounding areas – we’re here to serve you!<p/>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>ABC Garage Door</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="design.html" class="nav-link">Design</a>
+                <a href="Gallary.html" class="nav-link">Gallery</a>
+                <a href="service.html" class="nav-link">Service</a>
+                <a href="cost.html" class="nav-link">Cost</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-<ul class="list1"style="color:black;font-size:18px;" >
-<li>We Provide Same Day Service</li>
-<li>Top quality services and replacement parts</li>
-<li>Quick response period</li>
-<li>The best technicians we provides</li>
-<li>Free estimates</li>
-<li>We Honest & Experienced</li>
-<li>We Licensed, Bonded & Insured</li>
-<li>We Accept All Type Of Payments</li>
-<li>We Have Best Prices</li>
-</ul>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">ABC Garage Door Repair & Installation Service</h1>
+            <p class="hero-subtitle">Professional garage door services in Seattle and surrounding areas</p>
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn btn-primary">Get Free Quote</a>
+                <a href="tel:206-123-1234" class="btn btn-secondary">
+                    <i class="fas fa-phone"></i> (206) 123-1234
+                </a>
+            </div>
+        </div>
+        <div class="hero-features">
+            <div class="feature-item">
+                <i class="fas fa-clock"></i>
+                <span>24/7 Service</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>Licensed & Insured</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-tools"></i>
+                <span>Same Day Repair</span>
+            </div>
+        </div>
+    </section>
 
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Why Choose Us Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Choose Us?</h2>
+                    <p>Your trusted garage door experts with years of experience and thousands of satisfied customers</p>
+                </div>
+                
+                <div class="content-grid">
+                    <div class="content-text">
+                        <p>Our goal is to have our clients satisfied with our quick, reliable and high quality garage door services. We have years of experience and thousands of satisfied customers. We will be glad to make you another happy customer.</p>
+                        
+                        <p>Quality service is our watch word. Despite our competitive price, we never compromise the quality of the repair services we offer. All our trained technicians are committed to providing the best services that will keep your garage door working for a very long period of time.</p>
+                        
+                        <div class="features-list">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Same Day Service</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Top Quality Services & Parts</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Quick Response Time</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Expert Technicians</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Free Estimates</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Licensed, Bonded & Insured</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-image">
+                        <img src="image/17.jpg" alt="Professional garage door service" class="responsive-img">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<h2 id="when">When you work with us - You can expect...</h2>
+        <!-- What to Expect Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>When You Work With Us - You Can Expect...</h2>
+                    <p>Professional service every step of the way</p>
+                </div>
+                
+                <div class="expectations-grid">
+                    <div class="expectation-item">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Professional Service</h3>
+                        <p>Prompt, courteous & professional service every time</p>
+                    </div>
+                    <div class="expectation-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Live Support</h3>
+                        <p>A live person on the phone any time you call</p>
+                    </div>
+                    <div class="expectation-item">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Expert Technicians</h3>
+                        <p>Uniformed & expert technician in fully equipped vehicle</p>
+                    </div>
+                    <div class="expectation-item">
+                        <i class="fas fa-heart"></i>
+                        <h3>Respectful Treatment</h3>
+                        <p>You'll be treated with complete respect and integrity</p>
+                    </div>
+                    <div class="expectation-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>On-Time Arrival</h3>
+                        <p>Phone call before arrival and on-time service</p>
+                    </div>
+                    <div class="expectation-item">
+                        <i class="fas fa-clipboard-check"></i>
+                        <h3>Complete Inspection</h3>
+                        <p>25-point safety inspection of your garage door system</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<ul class="list2"style="color:black;font-size:18px;" >
-<li>Prompt, courteous & professional service every time</li>
-<li>A live person on the phone any time</li>
-<li>A uniformed & expert technician in a fully equipped company vehicle</li>
-<li>To be treated with respect</li>
-<li>Complete integrity</li>
-<li>A phone call before we arrive</li>
-<li>On-time arrival for your appointment</li>
-<li>To know the exact condition of your garage door & opener from our 25 point safety inspection</li>
-<li>To know the exact costs and options before we begin work</li>
-<li>To know all about the warranty coverage for parts & service</li>
-<li>To receive the highest quality commercial grade parts & materials available</li>
-<li>Your service to be done right the first time</li>
-<li>Your job will be completed quickly & professionally</li>
-</ul>
-</div>
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Need Garage Door Service?</h2>
+                    <p>Get professional service 7 days a week. No extra charges for evenings, weekends, or holidays!</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-large">Get Free Estimate</a>
+                        <a href="tel:206-123-1234" class="btn btn-outline btn-large">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<div id="footer" >
-        <p>PRIVACY |  PRIVACY RIGHTS | DO NOT SELL MY INFORMATION | TERMS & CONDITIONS | <br>
-COPYRIGHT © 2021 ABC Garage Door Repair & Instalation Service. ALL RIGHTS RESERVED. </p>
-		  
-		</div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ABC Garage Door Service</h3>
+                    <p>Professional garage door repair and installation services in Seattle and surrounding areas.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (206) 123-1234</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 12345 12th PL S, SeaTac WA</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="service.html">Garage Door Repair</a></li>
+                        <li><a href="service.html">Door Installation</a></li>
+                        <li><a href="service.html">Opener Repair</a></li>
+                        <li><a href="service.html">Spring Replacement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="design.html">Design Options</a></li>
+                        <li><a href="cost.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ABC Garage Door Repair & Installation Service. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
