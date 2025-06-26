@@ -1,79 +1,735 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link href="style.css" rel="stylesheet" text="text/css">
-<style>
-
-
-#home{
-display:block;
-background:rgba(243,244,235,0.9);
-background-position:center;
-height:950px;
- margin-bottom:0px;
-margin-right:165px;
-margin-left:165px;
-background-size:100%;
-padding-top:50px;
-margin-top:20px;
-border-radius: 25px 25px 0px 0px ;
-box-shadow: 5px 5px 5px 5px #888888;
-}
-
-
-
-
-#footer{
-	background:#80F3FF;
-	min-height:40px;
-	border-radius: 0px 0px 20px 20px;
- 	box-shadow: 5px 5px 5px 5px #888888;
-       margin-bottom:0px;
-       margin-right:165px;
-       margin-left:165px;
-        background-size:100%;
-       padding-top:50px;
-      text-align:center;
- }
-
-</style>
-<title>
- Garage Door Repair & Instalation Service
-</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Our Location - ABC Garage Door Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<div class="navbar">
-<ul>
-<li><a href="index.html">Home</a> </li>
-<li><a href="about.html">About</a> </li>
-<li><a href="design.html">Design</a> </li>
-<li><a href="Gallary.html">Gallery</a> </li>
-<li><a href="service.html">Service</a> </li>
-<li><a href="cost.html">Cost</a> </li>
-<li><a href="contact.html"id="onlink">Contact</a> </li>
- </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>ABC Garage Door</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="design.html" class="nav-link">Design</a>
+                <a href="Gallary.html" class="nav-link">Gallery</a>
+                <a href="service.html" class="nav-link">Service</a>
+                <a href="cost.html" class="nav-link">Cost</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-</div> 
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Find Our Location</h1>
+            <p>Visit us or find our service areas throughout the Seattle region</p>
+        </div>
+    </section>
 
-<center><h1 id="door">ABC Garage Door Repair <br> & <br> Installation Service  </h1></center>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Location Info Section -->
+        <section class="section">
+            <div class="container">
+                <div class="location-grid">
+                    <!-- Business Information -->
+                    <div class="location-info">
+                        <div class="info-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>Our Main Office</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="address">
+                                    <h4>ABC Garage Door Service</h4>
+                                    <p>12345 12th PL S<br>SeaTac, WA 98168</p>
+                                </div>
+                                
+                                <div class="contact-details">
+                                    <div class="contact-item">
+                                        <i class="fas fa-phone"></i>
+                                        <div>
+                                            <strong>Phone:</strong>
+                                            <a href="tel:206-123-1234">(206) 123-1234</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <div>
+                                            <strong>Email:</strong>
+                                            <a href="mailto:info@abcgaragedoor.com">info@abcgaragedoor.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-clock"></i>
+                                        <div>
+                                            <strong>Hours:</strong>
+                                            <span>Mon-Fri: 7AM-7PM</span>
+                                        </div>
+                                    </div>
+                                </div>
 
- <div id="home">
+                                <div class="action-buttons">
+                                    <a href="https://maps.google.com/?q=12345+12th+PL+S,+SeaTac,+WA+98168" 
+                                       target="_blank" 
+                                       class="btn btn-primary">
+                                        <i class="fas fa-directions"></i>
+                                        Get Directions
+                                    </a>
+                                    <a href="tel:206-123-1234" class="btn btn-outline">
+                                        <i class="fas fa-phone"></i>
+                                        Call Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-<center><h1 style="color :green; font-size:50px;">Find Our Locations </h1></center>
+                        <!-- Business Hours Card -->
+                        <div class="hours-card">
+                            <h3>Business Hours</h3>
+                            <div class="hours-list">
+                                <div class="hours-item">
+                                    <span class="day">Monday - Friday</span>
+                                    <span class="time">7:00 AM - 7:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="day">Saturday</span>
+                                    <span class="time">8:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="day">Sunday</span>
+                                    <span class="time">9:00 AM - 5:00 PM</span>
+                                </div>
+                                <div class="hours-item emergency">
+                                    <span class="day">Emergency Service</span>
+                                    <span class="time">24/7 Available</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2702.411394734641!2d-122.23337608441356!3d47
-.36488857916938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549059841a4b51a5%3A0xbc2b68f6dcf88746!2sNeighborhood%20Garage%20Door%20Service%20Seattle!5e0!3m2!1sen!2sus!4v1623445764279!5m2!1sen!2sus"
- width="400" height="300" style="border:5px solid blue;" allowfullscreen="" loading="lazy"></iframe></center>
+                    <!-- Interactive Map -->
+                    <div class="map-container">
+                        <div class="map-wrapper">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2702.411394734641!2d-122.23337608441356!3d47.36488857916938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549059841a4b51a5%3A0xbc2b68f6dcf88746!2sNeighborhood%20Garage%20Door%20Service%20Seattle!5e0!3m2!1sen!2sus!4v1623445764279!5m2!1sen!2sus"
+                                width="100%" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <div class="map-overlay-info">
+                            <div class="overlay-content">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <span>Click map to open in Google Maps</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-</div>
+        <!-- Service Areas Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Service Areas</h2>
+                    <p>We proudly serve the greater Seattle metropolitan area</p>
+                </div>
+                
+                <div class="service-areas-grid">
+                    <div class="areas-visual">
+                        <div class="area-card">
+                            <h3>Primary Service Areas</h3>
+                            <div class="areas-list">
+                                <div class="area-item primary">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Seattle</span>
+                                    <small>Full Service</small>
+                                </div>
+                                <div class="area-item primary">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>SeaTac</span>
+                                    <small>Full Service</small>
+                                </div>
+                                <div class="area-item primary">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Renton</span>
+                                    <small>Full Service</small>
+                                </div>
+                                <div class="area-item primary">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Bellevue</span>
+                                    <small>Full Service</small>
+                                </div>
+                            </div>
+                        </div>
 
-<div id="footer" >
-        <p>PRIVACY |  PRIVACY RIGHTS | DO NOT SELL MY INFORMATION | TERMS & CONDITIONS | <br>
-COPYRIGHT © 2021 ABC Garage Door Repair & Instalation Service. ALL RIGHTS RESERVED. </p>
-		  
-		</div>
+                        <div class="area-card">
+                            <h3>Extended Service Areas</h3>
+                            <div class="areas-list">
+                                <div class="area-item secondary">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Bothell</span>
+                                    <small>Service Available</small>
+                                </div>
+                                <div class="area-item secondary">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Redmond</span>
+                                    <small>Service Available</small>
+                                </div>
+                                <div class="area-item secondary">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Kirkland</span>
+                                    <small>Service Available</small>
+                                </div>
+                                <div class="area-item secondary">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Tacoma</span>
+                                    <small>Service Available</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="coverage-info">
+                        <div class="coverage-card">
+                            <div class="coverage-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h4>Mobile Service</h4>
+                            <p>We come to you! Our fully equipped service trucks bring everything needed for repairs and installations directly to your location.</p>
+                        </div>
+
+                        <div class="coverage-card">
+                            <div class="coverage-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h4>Response Time</h4>
+                            <p>Same-day service available in most areas. Emergency service available 24/7 with no extra charges for evenings or weekends.</p>
+                        </div>
+
+                        <div class="coverage-card">
+                            <div class="coverage-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h4>Service Inquiry</h4>
+                            <p>Don't see your area listed? Call us! We may still be able to provide service or can recommend a trusted partner.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Visit Us Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Visit Our Location?</h2>
+                    <p>See our showroom and meet our expert team</p>
+                </div>
+                
+                <div class="visit-reasons">
+                    <div class="reason-item">
+                        <div class="reason-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h4>See Samples</h4>
+                        <p>View actual door samples, materials, and hardware options in person before making your decision.</p>
+                    </div>
+                    
+                    <div class="reason-item">
+                        <div class="reason-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>Meet Our Team</h4>
+                        <p>Speak directly with our experienced technicians and get expert advice for your specific needs.</p>
+                    </div>
+                    
+                    <div class="reason-item">
+                        <div class="reason-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h4>Get Accurate Quotes</h4>
+                        <p>Receive detailed, accurate estimates based on your specific requirements and preferences.</p>
+                    </div>
+                    
+                    <div class="reason-item">
+                        <div class="reason-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>See Our Equipment</h4>
+                        <p>Tour our facility and see the professional tools and equipment we use for installations and repairs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Visit or Need Service?</h2>
+                    <p>Stop by our showroom or call us for on-site service anywhere in the Seattle area</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-large">Schedule Visit</a>
+                        <a href="tel:206-123-1234" class="btn btn-outline btn-large">
+                            <i class="fas fa-phone"></i> Call for Service
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ABC Garage Door Service</h3>
+                    <p>Professional garage door repair and installation services in Seattle and surrounding areas.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (206) 123-1234</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 12345 12th PL S, SeaTac WA</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="service.html">Garage Door Repair</a></li>
+                        <li><a href="service.html">Door Installation</a></li>
+                        <li><a href="service.html">Opener Repair</a></li>
+                        <li><a href="service.html">Spring Replacement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="design.html">Design Options</a></li>
+                        <li><a href="cost.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ABC Garage Door Repair & Installation Service. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <style>
+        /* Page-specific styles */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-600) 0%, var(--secondary-600) 100%);
+            color: white;
+            padding: calc(70px + var(--space-16)) 0 var(--space-16);
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: var(--font-size-4xl);
+            font-weight: 700;
+            margin-bottom: var(--space-4);
+        }
+
+        .page-header p {
+            font-size: var(--font-size-lg);
+            opacity: 0.9;
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-12);
+        }
+
+        @media (min-width: 1024px) {
+            .location-grid {
+                grid-template-columns: 1fr 1.5fr;
+            }
+        }
+
+        .location-info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-8);
+        }
+
+        .info-card {
+            background: white;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-base);
+            overflow: hidden;
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+            color: white;
+            padding: var(--space-6);
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+        }
+
+        .card-header i {
+            font-size: var(--font-size-xl);
+        }
+
+        .card-header h3 {
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .card-content {
+            padding: var(--space-6);
+        }
+
+        .address {
+            margin-bottom: var(--space-6);
+        }
+
+        .address h4 {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            color: var(--neutral-800);
+            margin-bottom: var(--space-2);
+        }
+
+        .address p {
+            color: var(--neutral-600);
+            line-height: 1.6;
+        }
+
+        .contact-details {
+            margin-bottom: var(--space-8);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+            margin-bottom: var(--space-4);
+        }
+
+        .contact-item i {
+            color: var(--primary-600);
+            font-size: var(--font-size-lg);
+            width: 20px;
+        }
+
+        .contact-item strong {
+            color: var(--neutral-800);
+            margin-right: var(--space-2);
+        }
+
+        .contact-item a {
+            color: var(--primary-600);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: var(--space-4);
+            flex-wrap: wrap;
+        }
+
+        .hours-card {
+            background: white;
+            border-radius: var(--radius-xl);
+            padding: var(--space-6);
+            box-shadow: var(--shadow-base);
+        }
+
+        .hours-card h3 {
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+            margin-bottom: var(--space-6);
+            color: var(--neutral-800);
+        }
+
+        .hours-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-3);
+        }
+
+        .hours-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-3);
+            background: var(--neutral-50);
+            border-radius: var(--radius-md);
+        }
+
+        .hours-item.emergency {
+            background: var(--error-50);
+            color: var(--error-700);
+            font-weight: 600;
+        }
+
+        .map-container {
+            position: relative;
+        }
+
+        .map-wrapper {
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+        }
+
+        .map-overlay-info {
+            position: absolute;
+            bottom: var(--space-4);
+            left: var(--space-4);
+            right: var(--space-4);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-lg);
+            padding: var(--space-3);
+            text-align: center;
+        }
+
+        .overlay-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-2);
+            color: var(--neutral-700);
+            font-size: var(--font-size-sm);
+        }
+
+        .overlay-content i {
+            color: var(--primary-600);
+        }
+
+        .service-areas-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-12);
+        }
+
+        @media (min-width: 768px) {
+            .service-areas-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .areas-visual {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-6);
+        }
+
+        .area-card {
+            background: white;
+            border-radius: var(--radius-xl);
+            padding: var(--space-6);
+            box-shadow: var(--shadow-base);
+        }
+
+        .area-card h3 {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            margin-bottom: var(--space-4);
+            color: var(--neutral-800);
+        }
+
+        .areas-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-3);
+        }
+
+        .area-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+            padding: var(--space-3);
+            border-radius: var(--radius-md);
+            transition: var(--transition-fast);
+        }
+
+        .area-item.primary {
+            background: var(--primary-50);
+            border-left: 4px solid var(--primary-500);
+        }
+
+        .area-item.secondary {
+            background: var(--neutral-50);
+            border-left: 4px solid var(--neutral-400);
+        }
+
+        .area-item i {
+            color: var(--primary-600);
+        }
+
+        .area-item span {
+            font-weight: 500;
+            color: var(--neutral-800);
+            flex: 1;
+        }
+
+        .area-item small {
+            color: var(--neutral-500);
+            font-size: var(--font-size-xs);
+        }
+
+        .coverage-info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-6);
+        }
+
+        .coverage-card {
+            background: white;
+            border-radius: var(--radius-xl);
+            padding: var(--space-6);
+            box-shadow: var(--shadow-base);
+            text-align: center;
+            transition: var(--transition-base);
+        }
+
+        .coverage-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .coverage-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-4);
+        }
+
+        .coverage-icon i {
+            font-size: var(--font-size-xl);
+            color: white;
+        }
+
+        .coverage-card h4 {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            margin-bottom: var(--space-3);
+            color: var(--neutral-800);
+        }
+
+        .coverage-card p {
+            color: var(--neutral-600);
+            line-height: 1.6;
+        }
+
+        .visit-reasons {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-8);
+        }
+
+        @media (min-width: 640px) {
+            .visit-reasons {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .visit-reasons {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+
+        .reason-item {
+            text-align: center;
+            background: white;
+            border-radius: var(--radius-xl);
+            padding: var(--space-6);
+            box-shadow: var(--shadow-base);
+            transition: var(--transition-base);
+        }
+
+        .reason-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .reason-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-4);
+        }
+
+        .reason-icon i {
+            font-size: var(--font-size-xl);
+            color: white;
+        }
+
+        .reason-item h4 {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            margin-bottom: var(--space-3);
+            color: var(--neutral-800);
+        }
+
+        .reason-item p {
+            color: var(--neutral-600);
+            line-height: 1.6;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 640px) {
+            .action-buttons {
+                flex-direction: column;
+            }
+
+            .action-buttons .btn {
+                width: 100%;
+            }
+
+            .map-overlay-info {
+                position: static;
+                margin-top: var(--space-4);
+            }
+        }
+    </style>
 </body>
-
 </html>
